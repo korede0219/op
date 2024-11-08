@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbox</title>
+    <link rel="stylesheet" href="hn.css">
+</head>
+<body>
+    <!-- Chat Button -->
+    <button id="chatButton" class="chat-button" onclick="toggleChatbox()">💬</button>
+
+    <!-- Chat Container (Initially Hidden) -->
+    <div id="chatContainer" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>Chat with AI</h2>
+            <button onclick="toggleChatbox()">×</button>
+        </div>
+        <div id="chatbox" class="chatbox">
+            <div class="message bot-message">Hello! How can I assist you?</div>
+        </div>
+        <form id="chatForm" class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="bnm.js"></script>
+</body>
+</html>
